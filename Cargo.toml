@@ -1,0 +1,6 @@
+[package]
+name = "sproket"
+version = "0.1.0"
+authors = ["Timothy Lester <timothy.lester@live.com>"]
+
+[dependencies]

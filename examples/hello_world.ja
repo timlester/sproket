@@ -1,0 +1,4 @@
+// this is a comment
+
+// below prints to console
+prt("Hello world! This is Jaru!");
