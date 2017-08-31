@@ -1,0 +1,8 @@
+// variables.spr
+
+let x = 10;
+prtln(x);
+let y = 20;
+prtln(y);
+x = y;
+prtln(x);

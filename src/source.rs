@@ -55,9 +55,9 @@ impl SourceFile {
     }
 
     pub fn get_next(&mut self) -> char {
+        let c = self.source[self.index];
         self.index += 1;
-        let c = self.source[self.index - 1];
-        
+
         match c {
             '\n' => { 
                 self.line += 1; 
@@ -70,13 +70,13 @@ impl SourceFile {
     }
 
     pub fn throw_error(&self, error: &str, message: &str) {
-        println!("Error: {}", error);
+        println!("{} ({}:{})", self.path, self.line, self.col);
+        println!("ERROR: {}", error);
 
         if message.trim() != "" {
             println!("{}", message);
         }
 
-        println!("{}:{}:{}", self.path, self.line, self.col);
         process::exit(1);
     }
 }

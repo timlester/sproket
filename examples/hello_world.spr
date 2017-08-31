@@ -1,4 +1,4 @@
-// this is a comment
+// hello_world.spr
 
-// below prints to console
-prt("Hello world! This is Jaru!");
+// Use built in function prtln to print to console
+prtln("Hello world! This is Sproket!")
